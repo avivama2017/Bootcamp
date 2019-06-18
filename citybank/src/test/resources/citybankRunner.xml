@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Common Modules Script" parallel="false">
+    <!--    "platform", "url", "browser", "cloud", "browserVersion", "envName"-->
+    <parameter name="cloud" value="false"/>
+    <!--    <parameter name="os" value="OS X"/>-->
+    <!--    <parameter name="os_version" value="Sierra"/>-->
+    <parameter name="browserVersion" value="75"/>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://online.citi.com/US/login.do"/>
+
+    <parameter name="platform" value="mac"/>
+    <parameter name="envName" value="Saucelabs"></parameter>
+
+    <test name="Citybank Test">
+
+        <classes>
+            <class name="RegressionSuite.TestHomePage">
+
+
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
